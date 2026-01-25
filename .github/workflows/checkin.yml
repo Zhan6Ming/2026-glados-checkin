@@ -7,6 +7,8 @@ on:
     # 北京时间 21:30 (UTC 13:30)
     - cron: '30 13 * * *'
   workflow_dispatch:  # 允许手动触发
+  push:
+    branches: [main]  # 推送时也触发，保持活跃
 
 jobs:
   checkin:
